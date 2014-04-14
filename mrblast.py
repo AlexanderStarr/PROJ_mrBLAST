@@ -8,7 +8,7 @@ class mrBLAST(MRJob):
     def mapper_init(self):
         # Provide the query, located in a file, to the mapper.
         qfile = open('query.txt', 'r')
-        self.query = qfile.read().strip()
+        self.query = ''.join(qfile.read().split())
         qfile.close()
 
     def mapper_get_lines(self, _, line):
