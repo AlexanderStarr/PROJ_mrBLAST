@@ -1,0 +1,4 @@
+Instructions (running locally):
+1. Make sure that Python and mrjob are installed.
+2. Save your query in a file called "query.txt" in the same directory as the script.
+3. Run the file with the command "python mrblast.py path/to/datafile --file query.txt > output.txt".
